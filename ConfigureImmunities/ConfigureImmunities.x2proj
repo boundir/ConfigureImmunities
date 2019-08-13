@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>d20dc4d2-5989-456e-8f86-935bb5016bcc</Guid>
+    <Name>Configurable Immunities</Name>
+    <Description>This mods lets you configure units immunities. It can be Aliens, ADVENT or even your soldier. I have started this mod wanting to add immunities to rulers, and it was the Avatar after that. Then I realized this feature could be used by others for any unit.
+tags= War of the Chosen, Gameplay, Config</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>ConfigureImmunities</AssemblyName>
+    <RootNamespace>ConfigureImmunities</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\ConfigurableImmunities\" />
+    <Folder Include="Src\ConfigurableImmunities\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComImmunities.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\ConfigurableImmunities\Classes\OPTC_CharactersImmunities.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\ConfigurableImmunities\Classes\X2DownloadableContentInfo_ConfigurableImmunities.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
